@@ -44,6 +44,12 @@ const load = () => {
 	    }
 	}	
 	
+	let btn = document.getElementById("splay");
+
+	btn.addEventListener("click" , function(){
+		call(false);
+	})
+	
     const messaging = firebase.messaging();
     messaging.requestPermission().then(function () {
         return messaging.getToken();
