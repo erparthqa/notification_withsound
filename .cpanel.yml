@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/commhbpu/testone/
+    - /bin/cp -R * $DEPLOYPATH
